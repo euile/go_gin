@@ -25,5 +25,4 @@ curl http://localhost:8080/albums/1 \
     --data ''
 
 ###
-curl -X "DELETE" http://localhost:8080/albums/4 
-
+curl -X "DELETE" http://localhost:8080/albums/4
