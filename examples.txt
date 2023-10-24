@@ -1,0 +1,29 @@
+curl http://localhost:8080/albums \
+    --include \
+    --header "Content-Type: application/json" \
+    --request "POST"
+    --data '{"id": "4", "title": "Summertime Sadness", "artist": "Lana Del Ray", "price": 159.99'}
+
+###
+curl http://localhost:8080/albums 
+
+### 
+curl http://localhost:8080/albums \
+    --include \
+    --header "Content-Type: application/json" \
+    --request "POST"
+    --data ''
+
+### 
+curl http://localhost:8080/albums/4
+
+###
+curl http://localhost:8080/albums/1 \
+    --include \
+    --header "Content-Type: application/json" \
+    --request "DELETE"
+    --data ''
+
+###
+curl -X "DELETE" http://localhost:8080/albums/4 
+
